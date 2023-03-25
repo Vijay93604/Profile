@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <span id="it1"></span>
+    <span id="posA"></span>
+    <div id="header">
+        <img src="v.jpg" style="width:120px">
+
+        <div class="sections">
+            <div class="sec"><a href="#it1">Home</a></div>
+            <div class="sec"><a href="#posA">About</a></div>
+            <div class="sec"><a href="#sk">Skills</a></div>
+            <div class="sec"><a href="#ps">Projects</a></div>
+        </div>
+
+        <div class="contactMe"><a href="#contactMe">Contact Me</a></div>
+    </div>
+
+    <div class="whole">
+        
+        <div class="intro" id="it">
+            <div class="introName">
+                <h1>I'm <span class="vijay">Vijaya Kannan</span></h1>
+                <h1>Backend Developer</h1>
+            </div>
+            <img src="illu.avif">
+        </div>
+
+        <div class="aboutMe" id="am">
+            <div class="imgbackground"></div>
+            <img src="ZSTTK314.JPG" class="photo">
+
+            <div class="aboutMeDesc">
+                <h1 style="font-size:50px">About Me</h1>
+                <p>Hello I'm <span style="color:#DE6262;">Vijaya Kannan</span> I'm from Sivakasi</p>
+                <p>I have good skills in core JAVA and love to learn new things</p>
+                <p>I have good communication skills and abilty to work</p>
+                <p>in a team</p>
+                <hr>
+                <p>Phone Number : 9360450375</p>
+                <p>Corp Mail : vijayakannan.s@zohocorp.com</p>
+            </div>
+
+        </div>
+        <span id="sk"></span>
+        <h1 class="myskillHead">My Skills</h1>
+
+        <div class="skillContainer">
+
+            <div class="skills">
+                <h1>JAVA</h1>
+                <div class="fullSkill"><div class="myper" style=" width:80%;"></div></div>
+                <h1 class="percen">80%</h1>
+            </div>
+
+            <div class="skills">
+                <h1>Mysql</h1>
+                <div class="fullSkill"><div class="myper" style=" width:75%;""></div></div>
+                <h1 class="percen">75%</h1>
+            </div>
+
+            <div class="skills">
+                <h1>HTML</h1>
+                <div class="fullSkill"><div class="myper" style=" width:95%;""></div></div>
+                <h1 class="percen">95%</h1>
+            </div>
+
+            <div class="skills">
+                <h1>CSS</h1>
+                <div class="fullSkill"><div class="myper" style=" width:65%;""></div></div>
+                <h1 class="percen">65%</h1>
+            </div>
+
+            <div class="skills">
+                <h1>JS</h1>
+                <div class="fullSkill"><div class="myper" style=" width:65%;""></div></div>
+                <h1 class="percen">65%</h1>
+            </div>
+
+            <div class="skills">
+                <h1>Scratch</h1>
+                <div class="fullSkill"><div class="myper" style=" width:100%;""></div></div>
+                <h1 class="percen">100%</h1>
+            </div>
+
+        </div>
+<span id="ps"></span>
+        <h1 class="myskillHead">Projects</h1>
+
+        <div class="projectSelection">
+            <div class="psel" onclick="hideAndShowProject('java')"><h1>JAVA</h1></div>
+            <div class="psel" onclick="hideAndShowProject('js')"><h1>Vanilla JS</h1></div>
+            <div class="psel" onclick="hideAndShowProject('html')"><h1>HTML/CSS</h1></div>
+            <div class="psel" onclick="hideAndShowProject('scratch')"><h1>Scratch</h1></div>
+        </div>
+
+        <div class="projectContainer">
+
+            <div id="java" class="hideAndShow">
+
+                    <div class="containerParent">
+                        <h1>Zomato Clone</h1>
+                        <a href="https://github.com/Vijay93604/Zomato_Web">
+                             <div class="pro" id="javaZom"></div>
+                        </a>
+                    </div>
+
+                <div class="containerParent">
+                    <h1> Mini Manage Engine Clone</h1>
+                    <div class="pro" id="javaMan"></div>
+                </div>
+
+                <div class="containerParent">
+                    <h1>Dictionary API in Java</h1>
+                    <a href="https://github.com/Vijay93604/Api">
+                        <div class="pro" id="javaApi"></div>
+                    </a>
+                </div>
+
+                <div class="containerParent">
+                    <h1>Arraylist in Java</h1>
+                    <a href="https://github.com/Vijay93604/CustomArrayList">
+                        <div class="pro" id="javaArray"></div>
+                    </a>
+                </div>
+
+
+            </div>
+<!-- TODO Start of js  -->
+            <div id="js" class="hideAndShow">
+
+                    <div class="containerParent">
+                        <h1>Yahtzee</h1>
+                         <a href="https://resonant-salamander-4a6d89.netlify.app/index.html">
+                            <div class="pro" id="jsY"></div>
+                        </a>
+                    </div>
+
+                    <div class="containerParent">
+                        <h1>Connect 4</h1>
+                        <a href="https://resonant-salamander-4a6d89.netlify.app/index.html">
+                         <div class="pro" id="jsC"></div>
+                        </a>
+                    </div>
+                
+
+                <div class="containerParent">
+                    <h1>Tic Tac Toe</h1>
+                    <a href="https://soft-mochi-01a0f7.netlify.app/">
+                        <div class="pro" id="jsM"></div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="html" class="hideAndShow">
+
+                <div class="containerParent">
+                    <h1>Product Perview Card page</h1>
+                    <div class="pro" id="html1"></div>
+                </div>
+
+                <div class="containerParent">
+                    <h1>Formula Page</h1>
+                    <div class="pro" id="html2"></div>
+                </div>
+
+                <div class="containerParent">
+                    <h1>Suite Page</h1>
+                    <div class="pro" id="html3"></div>
+                </div>
+
+
+            </div>
+
+            <div id="scratch" class="hideAndShow">
+
+                <div class="containerParent" id="scr">
+                    <h1>Classic Ping Pong</h1>
+                    <div class="pro" id="s1"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- <div id="contactMe">
+
+            <div class="contachHeader"><h1>My Contact</h1></div>
+
+            <div class="phoneNum">
+                <h1 style="padding-left: 10px;">Phone Number :</h1>  
+                <h1 style="padding-left: 20px;">9360450375</h1>
+            </div>
+
+            <div class="phoneNum">
+                <h1 style="padding-left: 10px;">Corp Mail :</h1>  
+                <h2 style="padding-left: 20px;">vijayakannan.s@zohocorp.com</h2>
+            </div>
+
+        </div> -->
+        <br><br>
+
+    </div>
+    
+    <script src="profile.js"></script>
+</body>
+</html>
